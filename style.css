@@ -6,7 +6,7 @@
 
 body {
     background-image: url(imagens/imagem\ fundo.png);
-    background-color: saddlebrown;
+    background-color: sienna;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     
@@ -88,4 +88,117 @@ section h2 {
 
 .contatos a:hover {
     background-color: blue;
+}
+
+.produto {
+    background-color: white;
+    color: #333;
+
+    padding: 20px;
+    margin-bottom: 20px;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    box-shadow: 0 4px 10px rgba(0 , 0 , 0 , 0.2);
+}
+
+.botao-mais,
+.botao-menos {
+    width: 40px;
+    height: 40px;
+
+    border: none;
+    border-radius: 50px;
+
+    background-color: #2563eb;
+    color: white;
+
+    cursor: pointer;
+
+    margin: 0 8px;
+
+    transition: 0.2;
+}
+
+.botao-mais:hover,
+.botao-menos:hover {
+    background-color: #1d4ed8;
+    transform: scale(1.1);
+}
+
+.lista-produtos {
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    gap: 20px;
+}
+
+@media (max-width: 600px){
+    .lista-produtos {
+        grid-template-columns: 1fr;
+    }
+}
+
+.texto-preco {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.produto h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.quantidade {
+    display: inline-block;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    min-width: 30px;
+
+    text-align: center;
+
+    margin: 0;
+}
+
+.resumo-pedido {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.resumo-pedido h3 {
+    font-size: 26px;
+}
+
+
+#finalizar-pedido {
+    display: block;
+
+    margin: 0 auto;
+
+    padding: 14px 30px;
+
+    border: none;
+    border-radius: 50px;
+
+    background-color: #25D366;
+    color: white;
+
+    cursor: pointer;
+
+    transition: 0.2;
+}
+
+#finalizar-pedido:hover {
+    background-color: #1d4ed8;
+    transform: scale(1.1);
+}
+
+#finalizar-pedido:active {
+    transform: scale(0.97);
+
 }
