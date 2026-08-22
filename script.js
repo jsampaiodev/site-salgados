@@ -35,19 +35,19 @@ function mostrarPedido(){
         if (quantidade > 0){
             const subtotal = quantidade * preco;
 
-            pedido = pedido + quantidade + "x" + nome + "- R$ " + subtotal.toFixed(2).replace("." , ",") + "\n";
+            pedido = pedido + quantidade + " x " + nome + " - R$ " + subtotal.toFixed(2).replace("." , ",") + "\n";
         }
     });
 
-    const mensagem = "Olá! Gostaria de fazer um pedido: \n\n" + pedido + "\nTotal: R$ " + valorTotal.toFixed(2).replace(".",",");
+    const mensagem = "Olá! Gostaria de fazer um pedido! \n\n" + pedido + "\nTotal: R$ " + valorTotal.toFixed(2).replace(".",",");
 
     console.log(mensagem);
 
     const numero = "5516996208755";
 
-    const linkWhastsApp = "https://wa.me/" + numero + "?text" + encodeURIComponent(mensagem);
+    const linkWhastsApp = "https://wa.me/" + numero + "?text=" + encodeURIComponent(mensagem);
 
-    window.open(linkWhastsApp , "blank");
+    window.open(linkWhastsApp , "_blank");
 }
 
 produtos.forEach(function(produto) {
